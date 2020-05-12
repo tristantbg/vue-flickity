@@ -328,7 +328,7 @@ export default {
      * @returns {Array} cells - array of Flickity.Cells
      */
     getAdjacentCellElements(adjCount, index) {
-      this.$flickity.getAdjacentCellElements(adjCount, index);
+      return this.$flickity.getAdjacentCellElements(adjCount, index);
     },
   },
 };
