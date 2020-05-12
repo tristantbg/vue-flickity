@@ -320,6 +320,16 @@ export default {
       this.$flickity.options.draggable = true;
       this.$flickity.updateDraggable();
     },
+    
+    /**
+     * get cells adjacent to a slide
+     * @param {Integer} adjCount - number of adjacent slides
+     * @param {Integer} index - index of slide to start
+     * @returns {Array} cells - array of Flickity.Cells
+     */
+    getAdjacentCellElements(adjCount, index) {
+      this.$flickity.getAdjacentCellElements(adjCount, index);
+    },
   },
 };
 </script>
